@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Dev Fundamentals — Notes</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Web Development Fundamentals</h1>
+      <p>Notes, explanations, and mental models I wish I had when I started.</p>
+    </header>
+
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="#html-fundamentals">HTML</a></li>
+        <li><a href="#css-fundamentals">CSS</a></li>
+        <li><a href="#accessibility">Accessibility</a></li>
+        <li><a href="#forms">Forms</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="html-fundamentals">
+        <h2>HTML Fundamentals</h2>
+
+        <article>
+          <h3>Semantic HTML</h3>
+          <p>
+            Normal HTML tags like <code>&lt;div&gt;</code> and
+            <code>&lt;span&gt;</code> are generic containers that don't convey
+            any meaning about their content. They're purely for styling and
+            layout.
+          </p>
+          <p>
+            Semantic HTML tags clearly describe their meaning and purpose to
+            both the browser and the developer. For example,
+            <code>&lt;header&gt;</code> tells you it contains header content,
+            <code>&lt;article&gt;</code> indicates a self-contained piece of
+            content.
+          </p>
+
+          <aside>
+            <h4>Why it matters</h4>
+            <ul>
+              <li>
+                <strong> Accessibility:</strong> Screen readers use semantic
+                tags to help visually impaired users navigate pages. A screen
+                reader can jump between <code>&lt;nav&gt;</code> sections or
+                <code>&lt;article&gt;</code> elements, making navigation much
+                easier.
+              </li>
+              <li>
+                <strong>
+                  <abbr title="Search Engine Optimization">SEO</abbr>:</strong
+                >
+                Search engines better understand your content structure. A
+                <code>&lt;main&gt;</code> tag signals the primary content, while
+                <code>&lt;aside&gt;</code> indicates supplementary information.
+              </li>
+              <li>
+                <strong>Maintainability:</strong> Code becomes self-documenting.
+                Instead of <code>&lt;div class = "header"&gt;</code>, you use
+                <code>&lt;header&gt;</code>, making your HTML clearer to other
+                developers (and your future self).
+              </li>
+              <li>
+                <strong>Browser features:</strong> Browsers can provide built-in
+                functionality based on semantic tags, like reader modes that
+                extract <code>&lt;article&gt;</code> content.
+              </li>
+            </ul>
+          </aside>
+
+          <!-- Link to cheat sheet -->
+          <p>
+            Want a full list of semantic HTML tags?
+            <a href="semantic-tags.html"
+              >Check out the Semantic Tags Cheat Sheet &rarr;</a
+            >
+          </p>
+
+          <time datetime="2026-01-09">Last updated: Jan 9, 2026</time>
+        </article>
+
+        <article>
+          <h3>Block vs Inline vs Inline-Block</h3>
+          <p>
+            <!-- Your explanation -->
+          </p>
+        </article>
+
+        <article>
+          <h3>ID vs Class</h3>
+          <p>
+            <!-- Mental model -->
+          </p>
+        </article>
+      </section>
+
+      <section id="css-fundamentals">
+        <h2>CSS Fundamentals</h2>
+
+        <article>
+          <h3>Box Model</h3>
+          <p></p>
+        </article>
+
+        <article>
+          <h3>Flexbox — Layout Mental Model</h3>
+          <p></p>
+        </article>
+
+        <article>
+          <h3>Grid — When Flexbox Isn’t Enough</h3>
+          <p></p>
+        </article>
+      </section>
+
+      <section id="accessibility">
+        <h2>Accessibility Basics</h2>
+
+        <article>
+          <h3>Labels, Buttons, and Keyboard Users</h3>
+          <p></p>
+        </article>
+      </section>
+
+      <section id="forms">
+        <h2>Forms & Inputs</h2>
+
+        <article>
+          <h3>Why Forms Still Matter</h3>
+          <p></p>
+
+          <form>
+            <fieldset>
+              <legend>Example Form</legend>
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+
+              <label>
+                <input type="checkbox" name="subscribe" />
+                Subscribe to updates
+              </label>
+
+              <button type="submit">Submit</button>
+            </fieldset>
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <aside>
+      <h2>Common Beginner Mistakes</h2>
+      <ul>
+        <li>Using divs for everything</li>
+        <li>Clickable divs instead of buttons</li>
+        <li>Ignoring labels</li>
+      </ul>
+    </aside>
+
+    <footer>
+      <p>© 2026 — Learning in public (kind of).</p>
+    </footer>
+  </body>
+</html>

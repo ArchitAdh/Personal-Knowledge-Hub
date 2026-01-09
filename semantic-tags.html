@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Semantic Tags Reference</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+      header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+      }
+      header h1 {
+        margin: 0;
+      }
+      main {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      section {
+        margin-bottom: 2.5rem;
+      }
+      section h2 {
+        color: #667eea;
+        border-bottom: 3px solid #667eea;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+      }
+      article {
+        background: #f8f9fa;
+        padding: 1rem;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        border-left: 4px solid #667eea;
+      }
+      code {
+        background: #2d2d2d;
+        color: #f8f8f2;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: "Courier New", monospace;
+      }
+      .tag-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+      .tag-item {
+        background: white;
+        padding: 1rem;
+        border-radius: 5px;
+        border: 1px solid #e0e0e0;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .tag-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .tag-item code {
+        font-size: 1.1em;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+      .tag-description {
+        color: #555;
+        font-size: 0.9em;
+      }
+      footer {
+        text-align: center;
+        margin-top: 3rem;
+        padding: 2rem;
+        background: #2d2d2d;
+        color: white;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Semantic Tags Reference</h1>
+      <p>A comprehensive guide to all semantic HTML elements</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Document Structure</h2>
+        <div class="tag-list">
+          <div class="tag-item">
+            <code>&lt;header&gt;</code>
+            <p class="tag-description">
+              Introductory content or navigation for a section/page
+            </p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;nav&gt;</code>
+            <p class="tag-description">Navigation links section</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;main&gt;</code>
+            <p class="tag-description">
+              Main content of the document (only one per page)
+            </p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;section&gt;</code>
+            <p class="tag-description">
+              Thematic grouping of content, typically with a heading
+            </p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;article&gt;</code>
+            <p class="tag-description">
+              Self-contained, independently distributable content
+            </p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;aside&gt;</code>
+            <p class="tag-description">
+              Tangentially related content (sidebars, callouts)
+            </p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;footer&gt;</code>
+            <p class="tag-description">Footer information for a section/page</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Text Content</h2>
+        <div class="tag-list">
+          <div class="tag-item">
+            <code>&lt;h1&gt; to &lt;h6&gt;</code>
+            <p class="tag-description">Headings in hierarchical order</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;p&gt;</code>
+            <p class="tag-description">Paragraph</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;blockquote&gt;</code>
+            <p class="tag-description">
+              Extended quotation from another source
+            </p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;cite&gt;</code>
+            <p class="tag-description">Reference to a creative work</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;q&gt;</code>
+            <p class="tag-description">Short inline quotation</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;code&gt;</code>
+            <p class="tag-description">Code snippet</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;pre&gt;</code>
+            <p class="tag-description">Preformatted text</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;mark&gt;</code>
+            <p class="tag-description">Highlighted or marked text</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;time&gt;</code>
+            <p class="tag-description">Specific time or date</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;address&gt;</code>
+            <p class="tag-description">Contact information</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Lists</h2>
+        <div class="tag-list">
+          <div class="tag-item">
+            <code>&lt;ul&gt;</code>
+            <p class="tag-description">Unordered list</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;ol&gt;</code>
+            <p class="tag-description">Ordered list</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;li&gt;</code>
+            <p class="tag-description">List item</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;dl&gt;</code>
+            <p class="tag-description">Description list</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;dt&gt;</code>
+            <p class="tag-description">Term in a description list</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;dd&gt;</code>
+            <p class="tag-description">
+              Description/definition in a description list
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Embedded Content</h2>
+        <div class="tag-list">
+          <div class="tag-item">
+            <code>&lt;figure&gt;</code>
+            <p class="tag-description">
+              Self-contained content like images, diagrams, code
+            </p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;figcaption&gt;</code>
+            <p class="tag-description">Caption for a figure</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;audio&gt;</code>
+            <p class="tag-description">Sound content</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;video&gt;</code>
+            <p class="tag-description">Video content</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;picture&gt;</code>
+            <p class="tag-description">Container for multiple image sources</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Forms & Interactive</h2>
+        <div class="tag-list">
+          <div class="tag-item">
+            <code>&lt;form&gt;</code>
+            <p class="tag-description">Interactive form</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;fieldset&gt;</code>
+            <p class="tag-description">Group of related form controls</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;legend&gt;</code>
+            <p class="tag-description">Caption for a fieldset</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;label&gt;</code>
+            <p class="tag-description">Label for a form control</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;output&gt;</code>
+            <p class="tag-description">Result of a calculation</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Tables</h2>
+        <div class="tag-list">
+          <div class="tag-item">
+            <code>&lt;table&gt;</code>
+            <p class="tag-description">Tabular data</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;thead&gt;</code>
+            <p class="tag-description">Header rows group</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;tbody&gt;</code>
+            <p class="tag-description">Body rows group</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;tfoot&gt;</code>
+            <p class="tag-description">Footer rows group</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;caption&gt;</code>
+            <p class="tag-description">Table caption</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Other Semantic Tags</h2>
+        <div class="tag-list">
+          <div class="tag-item">
+            <code>&lt;details&gt;</code>
+            <p class="tag-description">
+              Disclosure widget that can be toggled open/closed
+            </p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;summary&gt;</code>
+            <p class="tag-description">Summary/caption for details element</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;dialog&gt;</code>
+            <p class="tag-description">Dialog box or modal</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;data&gt;</code>
+            <p class="tag-description">
+              Links content with a machine-readable value
+            </p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;abbr&gt;</code>
+            <p class="tag-description">Abbreviation or acronym</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;strong&gt;</code>
+            <p class="tag-description">Strong importance (typically bold)</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;em&gt;</code>
+            <p class="tag-description">Emphasized text (typically italic)</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;small&gt;</code>
+            <p class="tag-description">Fine print or side comments</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;del&gt;</code>
+            <p class="tag-description">Deleted/removed text</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;ins&gt;</code>
+            <p class="tag-description">Inserted/added text</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;s&gt;</code>
+            <p class="tag-description">
+              Strikethrough (no longer accurate/relevant)
+            </p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;sub&gt;</code>
+            <p class="tag-description">Subscript</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;sup&gt;</code>
+            <p class="tag-description">Superscript</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;kbd&gt;</code>
+            <p class="tag-description">Keyboard input</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;samp&gt;</code>
+            <p class="tag-description">Sample output from a program</p>
+          </div>
+          <div class="tag-item">
+            <code>&lt;var&gt;</code>
+            <p class="tag-description">Variable in programming/math context</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 HTML Semantic Tags Reference Guide</p>
+      <p>Using semantic HTML is a best practice in modern web development.</p>
+    </footer>
+  </body>
+</html>
